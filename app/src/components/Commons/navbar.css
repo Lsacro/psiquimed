@@ -1,0 +1,47 @@
+.top {
+  background-image: linear-gradient(
+    90deg,
+    var(--main) 0%,
+    var(--secundary) 100%
+  );
+  display: flex;
+  padding: 1rem;
+}
+
+.top > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.top-item-left {
+  padding-right: 20px;
+  border-right: 1px solid white;
+}
+
+.top-item-right {
+  padding-left: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.menu {
+  display: flex;
+  gap: clamp(1rem, 10vw, 8rem);
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--text-black);
+}
+
+.logo {
+  width: 250px;
+}

@@ -1,0 +1,10 @@
+h1 {
+  position: absolute;
+  top: 70%;
+  right: 60%;
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  background-color: rgba(48, 48, 48, 0.4);
+}
