@@ -1,10 +1,32 @@
 h1 {
-  position: absolute;
-  top: 70%;
-  right: 60%;
   text-align: center;
-  color: white;
+  color: black;
   font-size: 3rem;
   font-weight: 600;
-  background-color: rgba(48, 48, 48, 0.4);
+  text-align: left;
+}
+
+.home {
+  background: url("https://demo.awaikenthemes.com/dispnsary/wp-content/uploads/2025/01/hero-bg-shape-1.png") left top no-repeat,
+    url("https://demo.awaikenthemes.com/dispnsary/wp-content/uploads/2025/01/hero-bg-shape-2.png") right bottom no-repeat,
+    url("https://demo.awaikenthemes.com/dispnsary/wp-content/uploads/2025/01/hero-bg-shape-2.png") bottom no-repeat, linear-gradient(90deg, var(--background) 0%, var(--background) 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 2rem 2.5rem 2.5rem 2.5rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  width: 1140px;
+}
+
+.tittle {
+  width: 50%;
 }

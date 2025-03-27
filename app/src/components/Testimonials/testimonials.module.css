@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 600px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -5,7 +5,7 @@
     var(--secundary) 100%
   );
   display: flex;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .top > div {
@@ -16,12 +16,12 @@
   color: white;
 }
 
-.top-item-left {
+.topItemLeft {
   padding-right: 20px;
   border-right: 1px solid white;
 }
 
-.top-item-right {
+.topItemRight {
   padding-left: 20px;
 }
 

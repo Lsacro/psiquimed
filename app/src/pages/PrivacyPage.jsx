@@ -1,4 +1,4 @@
-import Navbar from "../components/Commons/Navbar";
+import Navbar from "@/components/Commons/Navbar/Navbar";
 
 function PrivacidadPage() {
   return (

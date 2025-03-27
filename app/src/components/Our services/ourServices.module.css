@@ -1,0 +1,21 @@
+.container img {
+  width: 400px;
+}
+
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
