@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <div>
+      <div id="footer">
         <div></div>
         <div>
           <p>Copyright © 2024 All Rights Reserved.</p>

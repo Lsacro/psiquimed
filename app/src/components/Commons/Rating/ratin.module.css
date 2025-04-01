@@ -1,0 +1,9 @@
+.rating {
+  display: flex;
+  gap: 1rem;
+}
+
+.rating span {
+  font-weight: 600;
+  color: #ffa800;
+}

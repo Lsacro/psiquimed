@@ -1,0 +1,11 @@
+.title3 {
+  color: var(--secundary);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

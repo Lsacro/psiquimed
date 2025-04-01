@@ -1,3 +1,4 @@
+import BackCard from "./BackCard";
 import "./team-card.css";
 import { useState } from "react";
 
@@ -14,6 +15,7 @@ const TeamCard = () => {
         "Diplomado en neurolobiología del comportamiento",
         "Docente pregrado en ESPE",
       ],
+      img: "/SVG/doctores/pao.jpg",
     },
     {
       id: 2,
@@ -26,6 +28,7 @@ const TeamCard = () => {
         "Estudios superiores en psicoterapia individual grupo familia y pareja APSA",
         "Maestrante gerencia en salud - UTE",
       ],
+      img: "/SVG/doctores/kath.jpg",
     },
     {
       id: 3,
@@ -38,6 +41,7 @@ const TeamCard = () => {
         "Formación en terapia psicodinámica y psicoanálisis",
         "Docente pregrado en la USFQ",
       ],
+      img: "/SVG/doctores/sebas.jpg",
     },
     {
       id: 4,
@@ -49,6 +53,7 @@ const TeamCard = () => {
         "Formación en psicoterapia sistémica (posracionalista)",
         "Docente posgrado en UCE",
       ],
+      img: "/SVG/doctores/aug.jpg",
     },
     {
       id: 5,
@@ -58,12 +63,12 @@ const TeamCard = () => {
         "Estudios en Trastorno por Déficit de Atención e Hiperactividad (TDAH) y Trastorno del Espectro Autista (TEA)",
         "Psicoterapia de pareja",
       ],
+      img: "/SVG/doctores/kim.jpg",
     },
   ];
 
   return (
     <>
-      <h2>Nuesto Equipo</h2>
       {data.map((item) => {
         const [isFlipped, setIsFlipped] = useState(false);
 
@@ -78,13 +83,18 @@ const TeamCard = () => {
             onClick={handleFlip}
           >
             <div className="flipper">
-              <div className="front">
+              <div
+                className="front"
+                style={{
+                  backgroundImage: `url(${item.img})`,
+                }}
+              >
                 <div className="front-text">
                   <h3>{item.name}</h3>
                 </div>
               </div>
               <div className="back">
-                <p>Calificación: {item.especialidades}</p>
+                <BackCard especialidades={item.especialidades} />
               </div>
             </div>
           </div>

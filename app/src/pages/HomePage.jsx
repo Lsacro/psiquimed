@@ -1,5 +1,6 @@
 import AboutUs from "../components/AboutUs/AboutUs";
 import Navbar from "../components/Commons/Navbar/Navbar";
+import Wassap from "../components/Commons/WhatsappButton/Wassap";
 import Footer from "../components/Footer/Footer";
 import Home from "../components/Home/Home";
 import OurServices from "../components/Our services/OurServices";
@@ -14,8 +15,8 @@ function HomePage() {
       <AboutUs />
       <OurTeam />
       <OurServices />
-      <Testimonials />
       <Footer />
+      <Wassap />
     </>
   );
 }

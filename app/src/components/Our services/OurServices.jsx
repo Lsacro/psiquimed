@@ -1,44 +1,65 @@
 import styles from "./ourServices.module.css";
+import SubTitle from "../Commons/SubTitle/SubTitle";
 
 function OurServices() {
   return (
     <>
-      <div>
-        <p>Our Services</p>
-        <h2>Comprehensice services for your health</h2>
+      <div className={styles.ourServices}>
+        <SubTitle
+          title="Our Services"
+          src="/SVG/servicios.svg"
+          alt="servicios"
+          size={"30px"}
+        />
         <div className={styles.container}>
           <div className={styles.card}>
-            <h3>Urology</h3>
-            <p>
-              Our neurology department provides expert care for conditions
-              affecting the brain, spine, and nervous system
-            </p>
-            <img
-              src="https://demo.awaikenthemes.com/dispnsary/wp-content/uploads/2024/12/service-img-1.jpg"
-              alt="Urologia"
-            />
+            <div className={styles.text}>
+              <h4 className={styles.h4}>Psicología</h4>
+              <div className={styles.list}>
+                <p>Psicoterapia individual</p>
+                <p>Psicoterapia de pareja</p>
+                <p>Atención de niños y niñas</p>
+                <p>Trastornos de la conducta, nuerodesarrollo</p>
+                <p>
+                  Trastorno por Déficit de Atención e Hiperactividad (TDAH) y
+                  Trastorno del Espectro Autista (TEA)
+                </p>
+              </div>
+            </div>
           </div>
           <div className={styles.card}>
-            <h3>Neurology</h3>
-            <p>
-              Our neurology department provides expert care for conditions
-              affecting the brain, spine, and nervous system
-            </p>
-            <img
-              src="https://demo.awaikenthemes.com/dispnsary/wp-content/uploads/2024/12/service-img-1.jpg"
-              alt="Neurologia"
-            />
+            <div className={styles.text}>
+              <h4 className={styles.h4}>
+                Atención del adolescente y del adulto
+              </h4>
+              <div className={styles.list}>
+                <p>Psicoterapia por psiquiatría</p>
+                <p>Trastornos de ansiedad</p>
+                <p>TOC</p>
+                <p>Trastornos afectivos (T. bipolar, T, depresivos)</p>
+                <p>Trastornos psicóticos (esquizofrenia)</p>
+                <p>Trastornos de la conducta alimentaria</p>
+                <p>
+                  Conductas de riesgo (cutting, conducta suicida, consumo de
+                  sustancias)
+                </p>
+                <p>Trastornos del sueño</p>
+                <p>Vínculos y disfunción familiar</p>
+                <p>Violencia de género</p>
+              </div>
+            </div>
           </div>
           <div className={styles.card}>
-            <h3>Eye Care</h3>
-            <p>
-              Our neurology department provides expert care for conditions
-              affecting the brain, spine, and nervous system
-            </p>
-            <img
-              src="https://demo.awaikenthemes.com/dispnsary/wp-content/uploads/2024/12/service-img-1.jpg"
-              alt="Eye Care"
-            />
+            <div className={styles.text}>
+              <h4 className={styles.h4}>Atención del adulto mayor</h4>
+              <div className={styles.list}>
+                <p>Trastornos neurocognitivos (Alzheimer, y otras demencias)</p>
+                <p>
+                  Valoración interdisciplinaria (psiquiatría, geriatría,
+                  fisioterapia)
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

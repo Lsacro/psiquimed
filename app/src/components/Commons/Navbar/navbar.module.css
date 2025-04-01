@@ -1,47 +1,40 @@
-.top {
-  background-image: linear-gradient(
-    90deg,
-    var(--main) 0%,
-    var(--secundary) 100%
-  );
-  display: flex;
-  padding: 0.5rem;
+.icon {
+  width: 18px;
 }
 
-.top > div {
-  flex: 1;
+.diplayNone {
+  display: none;
+}
+
+.container {
+  background-color: var(--main);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  color: white;
+  padding: 0.5rem 0 0 0;
+  color: #fff;
 }
 
-.topItemLeft {
-  padding-right: 20px;
-  border-right: 1px solid white;
-}
-
-.topItemRight {
-  padding-left: 20px;
+.openHours {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  margin-top: 2rem;
-}
-
-.menu {
-  display: flex;
-  gap: clamp(1rem, 10vw, 8rem);
-}
-
-.menu a {
-  text-decoration: none;
-  color: var(--text-black);
+  justify-content: space-evenly;
+  margin-top: 1rem;
 }
 
 .logo {
-  width: 250px;
+  width: 200px;
+}
+
+.navbarList {
+  display: flex;
+  align-items: center;
 }

@@ -2,24 +2,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: start;
   gap: 20px;
-}
-
-.team-member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(15% + 300px);
-}
-
-.team-member img {
-  width: 300px;
-  border-radius: 20px;
-}
-
-.text-name {
-  background-color: aliceblue;
-  margin-top: -60px;
-  padding: 15px;
-  border-radius: 20px;
+  margin: 1rem 32px;
 }
