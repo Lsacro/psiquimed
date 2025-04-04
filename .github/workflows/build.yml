@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: write # ✅ Permite escribir en el repo
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,21 +22,21 @@ jobs:
         with:
           node-version: "20.18.2"
           cache: "yarn"
-          cache-dependency-path: app/yarn.lock # <-- Aquí indicamos la ubicación del lock file
+          cache-dependency-path: app/yarn.lock
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-        working-directory: app # <-- Instalamos en la carpeta "app"
+        working-directory: app
 
       - name: Build Project
         run: yarn build
-        working-directory: app # <-- Ejecutamos el build en "app"
+        working-directory: app
 
       - name: Deploy to 'build' branch
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
           BRANCH: build
-          FOLDER: app/dist # <-- Aseguramos que el build esté en "app/dist"
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FOLDER: app/dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # ✅ Se usa el token automático de GitHub
           MESSAGE: "Build: (${GITHUB_SHA})"
