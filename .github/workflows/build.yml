@@ -3,27 +3,36 @@ name: Build and Deploy to Build Branch
 on:
   push:
     branches:
-      - main # Se ejecuta cuando hay cambios en main
-  workflow_dispatch: # Permite ejecución manual desde GitHub Actions
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20.18.2"
+          cache: "yarn"
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
+        working-directory: app # <-- Aquí indicamos que el package.json está en "app"
 
       - name: Build Project
-        run: yarn build # Asegúrate de que genera la carpeta "dist"
+        run: yarn build
+        working-directory: app # <-- Aquí también
 
-      - name: Push build to 'build' branch
+      - name: Deploy to 'build' branch
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
           BRANCH: build
-          FOLDER: dist # Solo sube la carpeta de build
+          FOLDER: app/dist # <-- Aseguramos que el build esté en "app/dist"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MESSAGE: "Build: ({sha})"
+          MESSAGE: "Build: (${GITHUB_SHA})"
