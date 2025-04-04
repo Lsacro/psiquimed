@@ -17,16 +17,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "20.18.2"
+          node-version: "18"
           cache: "yarn"
+          cache-dependency-path: app/yarn.lock # <-- Aquí indicamos la ubicación del lock file
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
-        working-directory: app # <-- Aquí indicamos que el package.json está en "app"
+        working-directory: app # <-- Instalamos en la carpeta "app"
 
       - name: Build Project
         run: yarn build
-        working-directory: app # <-- Aquí también
+        working-directory: app # <-- Ejecutamos el build en "app"
 
       - name: Deploy to 'build' branch
         uses: s0/git-publish-subdir-action@develop
