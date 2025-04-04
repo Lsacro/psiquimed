@@ -1,4 +1,4 @@
-import styles from "./bookinButton.module.css";
+import styles from "./bookinbutton.module.css";
 
 function BookinButton({ name }) {
   return (
