@@ -6,7 +6,7 @@ const TeamCard = () => {
   const data = [
     {
       id: 1,
-      name: "Dra. Paola Zuñiga",
+      name: "Dr. Paola Zuñiga",
       especialidades: [
         "Médico general - UCE",
         "Especialista en Psiquiatría - UTE",
