@@ -4,17 +4,19 @@ import SubTitle from "../Commons/SubTitle/SubTitle";
 
 const OurTeam = () => {
   return (
-    <>
-      <SubTitle
-        title="Nuestro Equipo"
-        size={"30px"}
-        alt={"equipo"}
-        src={"/SVG/equipo.svg"}
-      />
-      <div className="our-team">
-        <TeamCard />
+    <section>
+      <div>
+        <SubTitle
+          title="Nuestro Equipo"
+          size={"30px"}
+          alt={"equipo"}
+          src={"/SVG/equipo.svg"}
+        />
+        <div className="our-team">
+          <TeamCard />
+        </div>
       </div>
-    </>
+    </section>
   );
 };
 

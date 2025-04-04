@@ -6,70 +6,53 @@ const TeamCard = () => {
   const data = [
     {
       id: 1,
-      name: "Dra. Paola Zuñiga",
+      name: "Dr. Katherine Chérrez",
+      titulo: "Médico Psiquiatra",
       especialidades: [
-        "Médico general - UCE",
-        "Especialista en Psiquiatría - UTE",
-        "Diplomado en arteterapia",
-        "Formación en psicoterapia narrativa (posracionalista)",
-        "Diplomado en neurolobiología del comportamiento",
-        "Docente pregrado en ESPE",
+        "Especialista en Psiquiatría",
+        "Psicoterapia/ Individuales/ Familiares/ Grupos",
+        "Neurobiología del comportamiento",
       ],
-      img: "/SVG/doctores/pao.jpg",
+      img: "SVG/doctores/kath.jpg",
     },
     {
       id: 2,
-      name: "Dra. Katherine Chérrez",
+      name: "Dr. María Agsuta Rivera",
+      titulo: "Médico Psiquiatra",
       especialidades: [
-        "Médico general - UCE",
-        "Especialista en psiquiatría – UTE",
-        "Diplomado arteterapia",
-        "Diplomado en neurolobiología del comportamiento",
-        "Estudios superiores en psicoterapia individual grupo familia y pareja APSA",
-        "Maestrante gerencia en salud - UTE",
+        "28 años de experiencia",
+        "Psicoterápia procesal sistema",
+        "Neurobiología del comportamiento",
       ],
-      img: "/SVG/doctores/kath.jpg",
+      img: "SVG/doctores/aug.jpg",
     },
     {
       id: 3,
-      name: "Dr. Sebastián Vizcaíno",
+      name: "Dr. Sebastián Vizcaino",
+      titulo: "Médico de la Univerdidad Central del Ecuador",
       especialidades: [
-        "Médico general - UCE",
-        "Especialista en Psiquiatría – Pontificia Universidad Javeriana de Bogotá",
-        "Maestrante en Bioética – Universidad internacional de Valencia",
-        "Diplomado en cuidados paliativos – Universidad del Rosario",
-        "Formación en terapia psicodinámica y psicoanálisis",
-        "Docente pregrado en la USFQ",
+        "Especialista en Psiquiatría",
+        "Psicoterapia/Psicoanálisis",
+        "Psicoterapia Procesal Sistémica",
       ],
-      img: "/SVG/doctores/sebas.jpg",
+      img: "SVG/doctores/sebas.jpg",
     },
     {
       id: 4,
-      name: "Dra. María Augusta Rivera",
+      name: "Dr. Paola Zuñiga",
+      titulo: "Médico Psiquiatra",
       especialidades: [
-        "Médico general - UCE",
-        "Especialista en Psiquiatría - UCE",
-        "Antropóloga - UCE",
-        "Formación en psicoterapia sistémica (posracionalista)",
-        "Docente posgrado en UCE",
+        "Especialista en Psiquiatría",
+        "Arte Terapia",
+        "Neurobiología del comportamiento",
       ],
-      img: "/SVG/doctores/aug.jpg",
-    },
-    {
-      id: 5,
-      name: "Psi. Cl. Kimberly Treviño",
-      especialidades: [
-        "Psicóloga Clínica - Universidad Indoamérica",
-        "Estudios en Trastorno por Déficit de Atención e Hiperactividad (TDAH) y Trastorno del Espectro Autista (TEA)",
-        "Psicoterapia de pareja",
-      ],
-      img: "/SVG/doctores/kim.jpg",
+      img: "SVG/doctores/pao.jpg",
     },
   ];
 
   return (
     <>
-      {data.map((item) => {
+      {data.map((info) => {
         const [isFlipped, setIsFlipped] = useState(false);
 
         const handleFlip = () => {
@@ -78,7 +61,7 @@ const TeamCard = () => {
 
         return (
           <div
-            key={item.id}
+            key={info.id}
             className={`flip-container ${isFlipped ? "flipped" : ""}`}
             onClick={handleFlip}
           >
@@ -86,15 +69,15 @@ const TeamCard = () => {
               <div
                 className="front"
                 style={{
-                  backgroundImage: `url(${item.img})`,
+                  backgroundImage: `url(${info.img})`,
                 }}
               >
                 <div className="front-text">
-                  <h3>{item.name}</h3>
+                  <h3>{info.name}</h3>
                 </div>
               </div>
               <div className="back">
-                <BackCard especialidades={item.especialidades} />
+                <BackCard especialidades={info} />
               </div>
             </div>
           </div>

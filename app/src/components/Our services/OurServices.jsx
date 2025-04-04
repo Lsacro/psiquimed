@@ -3,7 +3,7 @@ import SubTitle from "../Commons/SubTitle/SubTitle";
 
 function OurServices() {
   return (
-    <>
+    <section>
       <div className={styles.ourServices}>
         <SubTitle
           title="Our Services"
@@ -63,7 +63,7 @@ function OurServices() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 
