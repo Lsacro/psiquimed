@@ -1,0 +1,68 @@
+.wrapper {
+  margin: 10% auto;
+  width: 100%;
+  min-height: 200px; /* Ajusta según el diseño */
+  background-color: var(--backgroundSoft);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-bottom: none;
+  transition: background 0.3s ease;
+}
+
+img {
+  width: 40px;
+}
+
+label.last {
+  border-bottom: 1px solid #fff;
+}
+
+ul ul li {
+  padding: 10px;
+  color: var(--font);
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+/* 🧩 Agregamos transición suave y transform-origin siempre */
+input[type="checkbox"] ~ ul {
+  height: 0;
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.4s ease, height 0.4s ease;
+}
+
+/* 🟢 Al hacer checked, se expande suavemente */
+input[type="checkbox"]:checked ~ ul {
+  height: 100%;
+  transform: scaleY(1);
+}
+
+input[type="checkbox"]:checked + label {
+  color: var(--listCheacked);
+  border-bottom: 1px solid #fff;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+}

@@ -13,7 +13,7 @@ const TeamCard = () => {
         "Psicoterapia/ Individuales/ Familiares/ Grupos",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/kath.jpg",
+      img: "SVG/doctores/kath.webp",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const TeamCard = () => {
         "Psicoterápia procesal sistema",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/aug.jpg",
+      img: "SVG/doctores/aug.webp",
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ const TeamCard = () => {
         "Psicoterapia/Psicoanálisis",
         "Psicoterapia Procesal Sistémica",
       ],
-      img: "SVG/doctores/sebas.jpg",
+      img: "SVG/doctores/sebas.webp",
     },
     {
       id: 4,
@@ -46,7 +46,7 @@ const TeamCard = () => {
         "Arte Terapia",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/pao.jpg",
+      img: "SVG/doctores/pao.webp",
     },
   ];
 
