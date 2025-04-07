@@ -9,17 +9,29 @@ function Footer() {
             href="https://www.facebook.com/psiquimed/?locale=es_LA"
             target="_blank"
           >
-            <img width={"40px"} src="/SVG/facebook.svg" alt="facebook svg" />
+            <img
+              className={styles.icon}
+              src="/SVG/facebook.svg"
+              alt="facebook svg"
+            />
           </a>
           <a href="https://www.instagram.com/psiquimedec/" target="_blank">
-            <img width={"40px"} src="/SVG/instagram.svg" alt="instagram svg" />
+            <img
+              className={styles.icon}
+              src="/SVG/instagram.svg"
+              alt="instagram svg"
+            />
           </a>
           <a href="https://www.tiktok.com/@psiquimed" target="_blank">
-            <img width={"40px"} src="/SVG/tiktok.svg" alt="Tik Tok svg" />
+            <img
+              className={styles.icon}
+              src="/SVG/tiktok.svg"
+              alt="Tik Tok svg"
+            />
           </a>
         </div>
         <div>
-          <p>Copyright © 2025 All Rights Reserved.</p>
+          <p className={styles.last}>Copyright © 2025 All Rights Reserved.</p>
         </div>
       </div>
     </>

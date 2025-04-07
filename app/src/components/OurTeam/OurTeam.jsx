@@ -4,7 +4,7 @@ import SubTitle from "../Commons/SubTitle/SubTitle";
 
 const OurTeam = () => {
   return (
-    <section>
+    <section id="equipo">
       <div>
         <SubTitle
           title="Nuestro Equipo"

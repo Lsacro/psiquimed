@@ -1,5 +1,5 @@
 .wrapper {
-  margin: 10% auto;
+  margin: 1rem auto;
   width: 100%;
   min-height: 200px; /* Ajusta según el diseño */
   background-color: var(--backgroundSoft);

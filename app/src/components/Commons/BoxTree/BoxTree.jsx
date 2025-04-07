@@ -68,38 +68,36 @@ function BoxTree() {
   const allGroups = [group1, group2, group3, group4, group5];
 
   return (
-    <section>
-      <div className={styles.wrapper}>
-        <ul>
-          {allGroups.map((group, index) => {
-            return (
-              <li key={index}>
-                <input type="checkbox" id={`list-item-${index}`} />
-                <label htmlFor={`list-item-${index}`}>
-                  <h3>{group.name}</h3>
-                  <img src="SVG/dropdown.svg" alt="menu desplegable" />
-                </label>
-                <ul>
-                  <h4 className={styles.title}>Terapias Individuales</h4>
-                  <ul className={styles.list}>
-                    {group.individualTherapies.map((p, index) => {
-                      return <li key={index}>{p}</li>;
-                    })}
-                  </ul>
-
-                  <h4 className={styles.title}>Terapias Grupales</h4>
-                  <ul className={styles.list}>
-                    {group.groupTherapies.map((p, index) => {
-                      return <li key={index}>{p}</li>;
-                    })}
-                  </ul>
+    <div className={styles.wrapper}>
+      <ul>
+        {allGroups.map((group, index) => {
+          return (
+            <li key={index}>
+              <input type="checkbox" id={`list-item-${index}`} />
+              <label htmlFor={`list-item-${index}`}>
+                <h3>{group.name}</h3>
+                <img src="SVG/dropdown.svg" alt="menu desplegable" />
+              </label>
+              <ul>
+                <h4 className={styles.title}>Terapias Individuales</h4>
+                <ul className={styles.list}>
+                  {group.individualTherapies.map((p, index) => {
+                    return <li key={index}>{p}</li>;
+                  })}
                 </ul>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-    </section>
+
+                <h4 className={styles.title}>Terapias Grupales</h4>
+                <ul className={styles.list}>
+                  {group.groupTherapies.map((p, index) => {
+                    return <li key={index}>{p}</li>;
+                  })}
+                </ul>
+              </ul>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
 

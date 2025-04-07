@@ -4,7 +4,7 @@ import SubTitle from "../Commons/SubTitle/SubTitle";
 const AboutUs = () => {
   return (
     <>
-      <section>
+      <section id="nosotros">
         <div className="container-us">
           <SubTitle
             title="Acerca de Nosotros"

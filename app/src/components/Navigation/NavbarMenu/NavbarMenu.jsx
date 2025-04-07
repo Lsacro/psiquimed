@@ -39,10 +39,9 @@ function NavbarMenu() {
         }}
       >
         <MenuItem onClick={() => handleScroll("footer")}>Inicio</MenuItem>
-        <MenuItem onClick={() => handleScroll("footer")}>Nosotros</MenuItem>
-        <MenuItem onClick={() => handleScroll("footer")}>Equipo</MenuItem>
-        <MenuItem onClick={() => handleScroll("footer")}>Servicios</MenuItem>
-        <MenuItem onClick={() => handleScroll("footer")}>Testimonios</MenuItem>
+        <MenuItem onClick={() => handleScroll("nosotros")}>Nosotros</MenuItem>
+        <MenuItem onClick={() => handleScroll("equipo")}>Equipo</MenuItem>
+        <MenuItem onClick={() => handleScroll("footer")}>nosotros</MenuItem>
       </Menu>
     </div>
   );

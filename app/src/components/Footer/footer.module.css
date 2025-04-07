@@ -20,3 +20,12 @@
 .footerContainer img:last-child {
   border-right: none;
 }
+
+.last {
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.icon {
+  width: 40px;
+}

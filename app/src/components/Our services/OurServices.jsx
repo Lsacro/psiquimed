@@ -1,17 +1,16 @@
-import styles from "./ourServices.module.css";
 import SubTitle from "../Commons/SubTitle/SubTitle";
+import BoxTree from "../Commons/BoxTree/BoxTree";
 
 function OurServices() {
   return (
-    <section>
-      <div className={styles.ourServices}>
-        <SubTitle
-          title="Our Services"
-          src="/SVG/servicios.svg"
-          alt="servicios"
-          size={"30px"}
-        />
-      </div>
+    <section id="servicios">
+      <SubTitle
+        title="Nuestros Servicios"
+        src="/SVG/servicios.svg"
+        alt="servicios"
+        size={"30px"}
+      />
+      <BoxTree />
     </section>
   );
 }
