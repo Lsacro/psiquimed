@@ -57,7 +57,7 @@ function BoxTree() {
     ],
   };
   const group5 = {
-    name: "Servicios de consultoría",
+    name: "🏢  Servicios de consultoría",
     individualTherapies: [],
     groupTherapies: [
       "Empresas : Salud mental laboral",
@@ -80,14 +80,19 @@ function BoxTree() {
                   <img src="SVG/dropdown.svg" alt="menu desplegable" />
                 </label>
                 <ul>
-                  <h3>Terapias Individuales</h3>
-                  {group.individualTherapies.map((p, index) => {
-                    return <li key={index}>{p}</li>;
-                  })}
-                  <h3>Terapias Grupales</h3>
-                  {group.groupTherapies.map((p, index) => {
-                    return <li key={index}>{p}</li>;
-                  })}
+                  <h4 className={styles.title}>Terapias Individuales</h4>
+                  <ul className={styles.list}>
+                    {group.individualTherapies.map((p, index) => {
+                      return <li key={index}>{p}</li>;
+                    })}
+                  </ul>
+
+                  <h4 className={styles.title}>Terapias Grupales</h4>
+                  <ul className={styles.list}>
+                    {group.groupTherapies.map((p, index) => {
+                      return <li key={index}>{p}</li>;
+                    })}
+                  </ul>
                 </ul>
               </li>
             );
