@@ -1,13 +1,25 @@
-import { Link } from "react-router-dom";
+import styles from "./footer.module.css";
 
 function Footer() {
   return (
     <>
-      <div id="footer">
-        <div></div>
+      <div id="footer" className={styles.footer}>
+        <div className={styles.footerContainer}>
+          <a
+            href="https://www.facebook.com/psiquimed/?locale=es_LA"
+            target="_blank"
+          >
+            <img width={"40px"} src="/SVG/facebook.svg" alt="facebook svg" />
+          </a>
+          <a href="https://www.instagram.com/psiquimedec/" target="_blank">
+            <img width={"40px"} src="/SVG/instagram.svg" alt="instagram svg" />
+          </a>
+          <a href="https://www.tiktok.com/@psiquimed" target="_blank">
+            <img width={"40px"} src="/SVG/tiktok.svg" alt="Tik Tok svg" />
+          </a>
+        </div>
         <div>
-          <p>Copyright © 2024 All Rights Reserved.</p>
-          <Link to="/privacy">Terminos y condiciones</Link>
+          <p>Copyright © 2025 All Rights Reserved.</p>
         </div>
       </div>
     </>

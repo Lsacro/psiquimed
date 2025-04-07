@@ -1,0 +1,22 @@
+.footer {
+  background: var(--text-black);
+  color: var(--background);
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0.7rem;
+}
+
+.footerContainer img {
+  flex: 1;
+  border-right: 2px solid white;
+  display: block;
+}
+
+/* Evitar la línea en la última imagen */
+.footerContainer img:last-child {
+  border-right: none;
+}

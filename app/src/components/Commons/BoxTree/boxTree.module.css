@@ -3,6 +3,7 @@
   width: 100%;
   min-height: 200px; /* Ajusta según el diseño */
   background-color: var(--backgroundSoft);
+  border-radius: 15px;
 }
 
 ul {

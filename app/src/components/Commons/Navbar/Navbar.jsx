@@ -39,24 +39,6 @@ function Navbar() {
           </div>
         </div>
         <div>
-          <div className={` ${styles.diplay}`}>
-            <a
-              href="https://www.facebook.com/psiquimed/?locale=es_LA"
-              target="_blank"
-            >
-              <img width={"40px"} src="/SVG/facebook.svg" alt="facebook svg" />
-            </a>
-            <a href="https://www.instagram.com/psiquimedec/" target="_blank">
-              <img
-                width={"40px"}
-                src="/SVG/instagram.svg"
-                alt="instagram svg"
-              />
-            </a>
-            <a href="https://www.tiktok.com/@psiquimed" target="_blank">
-              <img width={"40px"} src="/SVG/tiktok.svg" alt="Tik Tok svg" />
-            </a>
-          </div>
           <div className={styles.diplayNone}>
             <span>Contacto: </span>
             <p>0998964126</p>

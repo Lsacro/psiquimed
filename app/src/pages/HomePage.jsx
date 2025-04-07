@@ -15,7 +15,6 @@ function HomePage() {
       <Home />
       <AboutUs />
       <OurTeam />
-      <OurServices />
       <BoxTree />
       <Footer />
       <Wassap />
