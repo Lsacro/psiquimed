@@ -40,8 +40,10 @@ function NavbarMenu() {
       >
         <MenuItem onClick={() => handleScroll("footer")}>Inicio</MenuItem>
         <MenuItem onClick={() => handleScroll("nosotros")}>Nosotros</MenuItem>
-        <MenuItem onClick={() => handleScroll("equipo")}>Equipo</MenuItem>
-        <MenuItem onClick={() => handleScroll("footer")}>nosotros</MenuItem>
+        <MenuItem onClick={() => handleScroll("equipo")}>
+          Nuestro Equipo
+        </MenuItem>
+        <MenuItem onClick={() => handleScroll("footer")}>Servicios</MenuItem>
       </Menu>
     </div>
   );

@@ -1,52 +1,8 @@
-.container img {
-  width: 400px;
-}
-
-h2,
-h3,
-p {
-  text-align: center;
+.img {
+  width: 450px;
+  max-height: 450px;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.ourServices {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  margin: 2.5rem 16px 16px 16px;
-}
-
-.text {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-}
-
-.h4 {
-  width: 50%;
-  margin-right: 2.5rem;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.list p {
-  text-align: start;
 }

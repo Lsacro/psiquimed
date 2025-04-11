@@ -17,7 +17,7 @@ const TeamCard = () => {
     },
     {
       id: 2,
-      name: "Dr. María Agsuta Rivera",
+      name: "Dr. María Augusta Rivera",
       titulo: "Médico Psiquiatra",
       especialidades: [
         "28 años de experiencia",
@@ -39,7 +39,7 @@ const TeamCard = () => {
     },
     {
       id: 4,
-      name: "Dr. Paola Zuñiga",
+      name: "Dr. Paola Zúñiga",
       titulo: "Médico Psiquiatra",
       especialidades: [
         "Especialista en Psiquiatría",

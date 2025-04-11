@@ -1,5 +1,6 @@
 import SubTitle from "../Commons/SubTitle/SubTitle";
 import BoxTree from "../Commons/BoxTree/BoxTree";
+import styles from "./ourServices.module.css";
 
 function OurServices() {
   return (
@@ -10,7 +11,14 @@ function OurServices() {
         alt="servicios"
         size={"30px"}
       />
-      <BoxTree />
+      <div className={styles.container}>
+        <img
+          className={styles.img}
+          src="/img/ourServices.webp"
+          alt="nuestros servicios"
+        />
+        <BoxTree />
+      </div>
     </section>
   );
 }

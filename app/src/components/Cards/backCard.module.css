@@ -1,8 +1,10 @@
 .backCard {
+  background: ;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   margin: 1rem;
   width: 300px;
 }
@@ -37,4 +39,9 @@
 
 .p {
   text-align: start;
+}
+
+.name {
+  font-size: 1.6rem;
+  text-align: center;
 }
