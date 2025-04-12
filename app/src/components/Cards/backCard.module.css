@@ -1,5 +1,4 @@
 .backCard {
-  background: ;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -35,6 +34,10 @@
 .item {
   display: flex;
   align-items: center;
+}
+
+.special {
+  text-align: center;
 }
 
 .p {

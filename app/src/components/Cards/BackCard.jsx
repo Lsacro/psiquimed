@@ -6,7 +6,7 @@ function BackCard({ especialidades }) {
       <img className={styles.img} src="Logo/logo 2.png" alt="logo psiquimed" />
       <h3 className={styles.name}>{especialidades.name.toUpperCase()}</h3>
       <div className={styles.text}>
-        <p className={styles.p}> {especialidades.titulo.toUpperCase()}</p>
+        <p className={styles.special}> {especialidades.titulo.toUpperCase()}</p>
         <div className={styles.list}>
           {especialidades.especialidades.map((p, index) => (
             <div className={styles.item} key={index.toString()}>
