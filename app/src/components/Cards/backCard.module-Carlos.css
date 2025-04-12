@@ -1,0 +1,47 @@
+.backCard {
+  background: ;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+  width: 300px;
+}
+.img {
+  width: 100px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  margin: 2rem;
+  width: 225px;
+}
+
+.icon {
+  width: 25px;
+  margin-right: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.p {
+  text-align: start;
+}
+
+.name {
+  font-size: 1.6rem;
+  text-align: center;
+}
