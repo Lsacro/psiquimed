@@ -2,7 +2,7 @@ import styles from "./boxTree.module.css";
 
 function BoxTree() {
   const group1 = {
-    name: "👶  Niños (12 meses a 10 años)",
+    name: "Niños",
     individualTherapies: [
       "Evaluación emocional y del desarrollo (TDAH, Autismo)",
       "Psicoterapia infantil (juego-terapia, terapia conductual)",
@@ -22,7 +22,7 @@ function BoxTree() {
   };
 
   const group2 = {
-    name: "🧑‍🎓 Adolescentes (11 a 19 años)",
+    name: "Adolescentes",
     individualTherapies: [
       "Psicoterapia para manejo de ansiedad, depresión, anorexia, bulimia, conflictos de identidad y sexualidad",
       "Acompañamiento emocional y orientación vocacional",
@@ -33,7 +33,7 @@ function BoxTree() {
     ],
   };
   const group3 = {
-    name: "👩‍💼  Adultos (20 a 59 años)",
+    name: "Adultos",
     individualTherapies: [
       "Psicoterapia individual (ansiedad, depresión, trastornos de personalidad, duelo, insomnio, trastorno bipolar, esquizofrenia)",
       "Psicoterapia de pareja y terapia familiar",
@@ -44,7 +44,7 @@ function BoxTree() {
     ],
   };
   const group4 = {
-    name: "👵 Adultos Mayores (60+ años)",
+    name: "Adultos Mayores",
     individualTherapies: [
       "Acompañamiento emocional en el proceso de envejecimiento",
       "Manejo de duelo, insomnio, depresión, ansiedad, pérdida de memoria, esquizofrenia",
@@ -57,37 +57,37 @@ function BoxTree() {
     ],
   };
   const group5 = {
-    name: "🏢  Servicios de consultoría",
-    individualTherapies: [],
+    name: "Servicios de consultoría",
     groupTherapies: [
       "Empresas : Salud mental laboral",
       "Instituciones educativas: escuela para padres",
     ],
   };
 
-  const allGroups = [group1, group2, group3, group4, group5];
+  const allGroups = [group1, group2, group3, group4];
 
   return (
     <div className={styles.wrapper}>
-      <ul>
+      <ul className={styles.list2}>
         {allGroups.map((group, index) => {
           return (
             <li key={index}>
               <input type="checkbox" id={`list-item-${index}`} />
               <label htmlFor={`list-item-${index}`}>
-                <h3>{group.name}</h3>
-                <img src="SVG/dropdown.svg" alt="menu desplegable" />
+                <h3 className={styles.ageGroup}>{group.name.toUpperCase()}</h3>
               </label>
-              <ul>
+              <ul className={styles.list}>
+                <img src="/SVG/arrowDown.svg" alt="flecha hacia abajo" />
                 <h4 className={styles.title}>Terapias Individuales</h4>
-                <ul className={styles.list}>
-                  {group.individualTherapies.map((p, index) => {
-                    return <li key={index}>{p}</li>;
+                <ul className={styles.list1}>
+                  {group.individualTherapies?.map((p, index) => {
+                    return <li key={index}>{p}</li> || "";
                   })}
                 </ul>
+                <img src="/SVG/arrowDown.svg" alt="flecha hacia abajo" />
 
                 <h4 className={styles.title}>Terapias Grupales</h4>
-                <ul className={styles.list}>
+                <ul className={styles.list1}>
                   {group.groupTherapies.map((p, index) => {
                     return <li key={index}>{p}</li>;
                   })}
@@ -96,6 +96,23 @@ function BoxTree() {
             </li>
           );
         })}
+        {
+          <li>
+            <input type="checkbox" id={`list-item-5`} />
+            <label htmlFor={`list-item-5`}>
+              <h3 className={styles.ageGroup}>{group5.name.toUpperCase()}</h3>
+            </label>
+            <ul className={styles.list}>
+              <img src="/SVG/arrowDown.svg" alt="flecha hacia abajo" />
+              <h4 className={styles.title}>Terapias Grupales</h4>
+              <ul className={styles.list1}>
+                {group5.groupTherapies?.map((p, index) => {
+                  return <li key={index}>{p}</li> || "";
+                })}
+              </ul>
+            </ul>
+          </li>
+        }
       </ul>
     </div>
   );
