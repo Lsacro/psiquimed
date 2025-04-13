@@ -12,12 +12,12 @@ function OurServices() {
         size={"30px"}
       />
       <div className={styles.container}>
+        <BoxTree />
         <img
           className={styles.img}
           src="/img/ourServices.webp"
           alt="nuestros servicios"
         />
-        <BoxTree />
       </div>
     </section>
   );

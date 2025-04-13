@@ -1,5 +1,7 @@
 import styles from "./boxTree.module.css";
 
+import OurServicesBtn from "@/components/Buttons/OurServicesBtn/OurServicesBtn";
+
 function BoxTree() {
   const group1 = {
     name: "Niños",
@@ -64,57 +66,22 @@ function BoxTree() {
     ],
   };
 
-  const allGroups = [group1, group2, group3, group4];
+  const allGroups = [group1, group2, group3, group4, group5];
 
   return (
-    <div className={styles.wrapper}>
-      <ul className={styles.list2}>
-        {allGroups.map((group, index) => {
-          return (
-            <li key={index}>
-              <input type="checkbox" id={`list-item-${index}`} />
-              <label htmlFor={`list-item-${index}`}>
-                <h3 className={styles.ageGroup}>{group.name.toUpperCase()}</h3>
-              </label>
-              <ul className={styles.list}>
-                <img src="/SVG/arrowDown.svg" alt="flecha hacia abajo" />
-                <h4 className={styles.title}>Terapias Individuales</h4>
-                <ul className={styles.list1}>
-                  {group.individualTherapies?.map((p, index) => {
-                    return <li key={index}>{p}</li> || "";
-                  })}
-                </ul>
-                <img src="/SVG/arrowDown.svg" alt="flecha hacia abajo" />
-
-                <h4 className={styles.title}>Terapias Grupales</h4>
-                <ul className={styles.list1}>
-                  {group.groupTherapies.map((p, index) => {
-                    return <li key={index}>{p}</li>;
-                  })}
-                </ul>
-              </ul>
-            </li>
-          );
-        })}
-        {
-          <li>
-            <input type="checkbox" id={`list-item-5`} />
-            <label htmlFor={`list-item-5`}>
-              <h3 className={styles.ageGroup}>{group5.name.toUpperCase()}</h3>
-            </label>
-            <ul className={styles.list}>
-              <img src="/SVG/arrowDown.svg" alt="flecha hacia abajo" />
-              <h4 className={styles.title}>Terapias Grupales</h4>
-              <ul className={styles.list1}>
-                {group5.groupTherapies?.map((p, index) => {
-                  return <li key={index}>{p}</li> || "";
-                })}
-              </ul>
-            </ul>
-          </li>
-        }
-      </ul>
-    </div>
+    <section>
+      {allGroups.map((group, index) => {
+        return (
+          <div className={styles.container} key={index}>
+            <OurServicesBtn
+              name={group.name.toUpperCase()}
+              individual={group.individualTherapies || ""}
+              group={group.groupTherapies}
+            />
+          </div>
+        );
+      })}
+    </section>
   );
 }
 

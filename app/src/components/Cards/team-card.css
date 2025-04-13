@@ -68,7 +68,7 @@
   align-items: center;
   gap: 1.5rem;
   padding: 1.5rem;
-  background: var(--background);
+  background: var(--backgroundSoft);
   transform: rotateY(180deg);
 }
 
