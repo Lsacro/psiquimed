@@ -20,7 +20,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin: 0.5rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .button1:after {
@@ -52,17 +52,24 @@
 }
 
 .list {
-  padding-left: 0.5rem;
+  margin: 0.3rem 0;
+  padding: 0.5rem;
   border: 1px solid #ccc;
+  background: var(--background);
 }
 
-.list p {
-  margin: 1rem 0;
-  text-align: justify;
+.list ul {
+  list-style: disc;
+  list-style-position: outside;
+}
+
+.list li {
+  margin: 1.5rem;
+  text-align: start;
 }
 
 .arrow {
-  width: 25px;
+  width: 45px;
 }
 
 .container {

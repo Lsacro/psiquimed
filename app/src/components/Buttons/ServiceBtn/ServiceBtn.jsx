@@ -21,9 +21,11 @@ function ServiceBtn({ terapia, servicios }) {
       </button>
       {hidden && (
         <div className={styles.list}>
-          {servicios.map((p, index) => (
-            <p key={index}> - {p}</p>
-          ))}
+          <ul>
+            {servicios.map((p, index) => (
+              <li key={index}>{p}</li>
+            ))}
+          </ul>
         </div>
       )}
     </div>

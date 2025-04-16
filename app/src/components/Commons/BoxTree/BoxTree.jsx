@@ -69,7 +69,7 @@ function BoxTree() {
   const allGroups = [group1, group2, group3, group4, group5];
 
   return (
-    <section>
+    <div className={styles.upContainer}>
       {allGroups.map((group, index) => {
         return (
           <div className={styles.container} key={index}>
@@ -81,7 +81,7 @@ function BoxTree() {
           </div>
         );
       })}
-    </section>
+    </div>
   );
 }
 
