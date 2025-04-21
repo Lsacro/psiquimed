@@ -1,4 +1,5 @@
 import BookinButton from "../Commons/BookinButton/BookinButton";
+import YouTubeVideo from "../Videos/YoutubeVideo/YoutubeVideo";
 import "./home.css";
 
 const Home = () => {
@@ -8,8 +9,8 @@ const Home = () => {
         <div className="title-img">
           <div className="tittle">
             <h1>Especialistas en Psiquiatría y Salud Mental</h1>
-            <div className="img-container">
-              <img className="img" src="/SVG/video.svg" alt="img video" />
+            <div>
+              <YouTubeVideo />
             </div>
             <p className="texto">
               Disfrute de una atención médica en la que puede confiar. Nuestro

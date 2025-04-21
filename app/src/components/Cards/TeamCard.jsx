@@ -13,7 +13,7 @@ const TeamCard = () => {
         "Psicoterapia/ Individuales/ Familiares/ Grupos",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/kath.webp",
+      img: "SVG/doctores/perfilGenerico.webp",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const TeamCard = () => {
         "Psicoterápia procesal sistema",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/aug.webp",
+      img: "SVG/doctores/perfilGenerico.webp",
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ const TeamCard = () => {
         "Psicoterapia/Psicoanálisis",
         "Psicoterapia Procesal Sistémica",
       ],
-      img: "SVG/doctores/sebas.webp",
+      img: "SVG/doctores/perfilGenerico.webp",
     },
     {
       id: 4,
@@ -46,7 +46,7 @@ const TeamCard = () => {
         "Arte Terapia",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/pao.webp",
+      img: "SVG/doctores/perfilGenerico.webp",
     },
   ];
 
@@ -69,7 +69,10 @@ const TeamCard = () => {
               <div
                 className="front"
                 style={{
-                  backgroundImage: `url(${info.img})`,
+                  backgroundImage: `url(${info.img}), radial-gradient(51.74% 45.16% at 46.65% 38%,#f6f7f8 0%, var(--background) 44.58%, var(--backgroundSoft) 100% )`,
+                  backgroundSize: "contain",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
                 }}
               >
                 <div className="front-text">

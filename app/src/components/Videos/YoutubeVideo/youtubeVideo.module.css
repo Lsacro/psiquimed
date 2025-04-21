@@ -1,0 +1,28 @@
+.wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.placeholder {
+  background-color: #111;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.playIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  color: white;
+  text-shadow: 0 0 10px black;
+  user-select: none;
+}
+
+.video {
+  width: 100%;
+  display: block;
+}
