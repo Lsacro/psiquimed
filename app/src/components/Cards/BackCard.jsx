@@ -3,7 +3,11 @@ import styles from "./backCard.module.css";
 function BackCard({ especialidades }) {
   return (
     <div className={styles.backCard}>
-      <img className={styles.img} src="Logo/logo 2.png" alt="logo psiquimed" />
+      <img
+        className={styles.img}
+        src="/Logo/logo_vertical.webp"
+        alt="logo psiquimed"
+      />
       <h3 className={styles.name}>{especialidades.name.toUpperCase()}</h3>
       <div className={styles.text}>
         <p className={styles.special}> {especialidades.titulo.toUpperCase()}</p>

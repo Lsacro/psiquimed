@@ -48,7 +48,7 @@ function Navbar() {
       <nav className={styles.navbar}>
         <img
           className={styles.logo}
-          src="/Logo/logo.png"
+          src="/Logo/logo_horizontal.webp"
           alt="logo psiquimed"
         />
         <div className={styles.navbarList}>
