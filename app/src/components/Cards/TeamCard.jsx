@@ -13,7 +13,7 @@ const TeamCard = () => {
         "Psicoterapia/ Individuales/ Familiares/ Grupos",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/perfilGenerico.webp",
+      img: "SVG/doctores/Kath.webp",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const TeamCard = () => {
         "Psicoterápia procesal sistema",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/perfilGenerico.webp",
+      img: "SVG/doctores/Maria.webp",
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ const TeamCard = () => {
         "Psicoterapia/Psicoanálisis",
         "Psicoterapia Procesal Sistémica",
       ],
-      img: "SVG/doctores/perfilGenerico.webp",
+      img: "SVG/doctores/Sebas.webp",
     },
     {
       id: 4,
@@ -46,7 +46,46 @@ const TeamCard = () => {
         "Arte Terapia",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/perfilGenerico.webp",
+      img: "SVG/doctores/Pao.webp",
+    },
+    {
+      id: 5,
+      name: "Dr. Priscila Catucuamba",
+      titulo: "Terapeuta del Lenguaje de la UCE",
+      especialidades: [
+        "Diplomado en técnica ABA",
+        "Intervención al TEA y TDAH",
+        "Neuro rehabilitación y estimulación sensorial",
+      ],
+      img: "SVG/doctores/Pris.webp",
+    },
+    {
+      id: 6,
+      name: "Karla Gutiérrez",
+      titulo: "",
+      especialidades: [],
+      img: "SVG/doctores/Karla.webp",
+    },
+    {
+      id: 7,
+      name: "Melanie Zabala",
+      titulo: "",
+      especialidades: [],
+      img: "SVG/doctores/Melani.webp",
+    },
+    {
+      id: 8,
+      name: "Kimberly Trevino",
+      titulo: "",
+      especialidades: [],
+      img: "SVG/doctores/Kim.webp",
+    },
+    {
+      id: 9,
+      name: "Pamela Sánchez",
+      titulo: "",
+      especialidades: [],
+      img: "SVG/doctores/Pamela.webp",
     },
   ];
 
@@ -69,7 +108,7 @@ const TeamCard = () => {
               <div
                 className="front"
                 style={{
-                  backgroundImage: `url(${info.img}), radial-gradient(51.74% 45.16% at 46.65% 38%,#f6f7f8 0%, var(--background) 44.58%, var(--backgroundSoft) 100% )`,
+                  backgroundImage: `url(${info.img}), radial-gradient(51.74% 45.16% at 46.65% 38%,#f6f7f8 0%, #98A2AA 44.58%, #98A2AA 100% )`,
                   backgroundSize: "contain",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",

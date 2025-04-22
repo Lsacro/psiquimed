@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./youtubeVideo.module.css";
 
-function YoutubeVideo() {
+function YoutubeVideo({ video, img }) {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
@@ -13,7 +13,7 @@ function YoutubeVideo() {
             onClick={() => setShowVideo(true)}
           >
             <img
-              src="/videos/preview.jpg"
+              src={img}
               alt="Video Preview"
               className={styles.previewImage}
             />
@@ -21,12 +21,7 @@ function YoutubeVideo() {
           </div>
         </div>
       ) : (
-        <video
-          className={styles.video}
-          src="/videos/Psiquimed1.mp4"
-          controls
-          autoPlay
-        >
+        <video className={styles.video} src={video} controls autoPlay>
           Tu navegador no soporta video HTML5.
         </video>
       )}

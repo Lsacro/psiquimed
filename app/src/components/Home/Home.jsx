@@ -10,7 +10,10 @@ const Home = () => {
           <div className="tittle">
             <h1>Especialistas en Psiquiatría y Salud Mental</h1>
             <div>
-              <YouTubeVideo />
+              <YouTubeVideo
+                video="/videos/Psiquimed1.mp4"
+                img="/videos/preview.jpg"
+              />
             </div>
 
             <div className="button-container">
