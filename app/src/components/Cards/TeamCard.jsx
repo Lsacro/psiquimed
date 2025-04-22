@@ -13,7 +13,7 @@ const TeamCard = () => {
         "Psicoterapia/ Individuales/ Familiares/ Grupos",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/Kath.webp",
+      img: "/doctores/Kath.webp",
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const TeamCard = () => {
         "Psicoterápia procesal sistema",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/Maria.webp",
+      img: "/doctores/Maria.webp",
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ const TeamCard = () => {
         "Psicoterapia/Psicoanálisis",
         "Psicoterapia Procesal Sistémica",
       ],
-      img: "SVG/doctores/Sebas.webp",
+      img: "/doctores/Sebas.webp",
     },
     {
       id: 4,
@@ -46,7 +46,7 @@ const TeamCard = () => {
         "Arte Terapia",
         "Neurobiología del comportamiento",
       ],
-      img: "SVG/doctores/Pao.webp",
+      img: "/doctores/Pao.webp",
     },
     {
       id: 5,
@@ -57,35 +57,35 @@ const TeamCard = () => {
         "Intervención al TEA y TDAH",
         "Neuro rehabilitación y estimulación sensorial",
       ],
-      img: "SVG/doctores/Pris.webp",
+      img: "/doctores/Pris.webp",
     },
     {
       id: 6,
       name: "Karla Gutiérrez",
       titulo: "",
       especialidades: [],
-      img: "SVG/doctores/Karla.webp",
+      img: "/doctores/Karla.webp",
     },
     {
       id: 7,
       name: "Melanie Zabala",
       titulo: "",
       especialidades: [],
-      img: "SVG/doctores/Melani.webp",
+      img: "/doctores/Melani.webp",
     },
     {
       id: 8,
       name: "Kimberly Trevino",
       titulo: "",
       especialidades: [],
-      img: "SVG/doctores/Kim.webp",
+      img: "/doctores/Kim.webp",
     },
     {
       id: 9,
       name: "Pamela Sánchez",
       titulo: "",
       especialidades: [],
-      img: "SVG/doctores/Pamela.webp",
+      img: "/doctores/Pamela.webp",
     },
   ];
 
