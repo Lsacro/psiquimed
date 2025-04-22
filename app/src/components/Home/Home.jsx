@@ -12,10 +12,7 @@ const Home = () => {
             <div>
               <YouTubeVideo />
             </div>
-            <p className="texto">
-              Disfrute de una atención médica en la que puede confiar. Nuestro
-              equipo dedicado brinda atención compasiva y de alta calidad
-            </p>
+
             <div className="button-container">
               <BookinButton name="Agendar Una Cita" />
             </div>

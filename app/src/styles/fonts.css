@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Aeronaut";
-  src: url("../assets/fonts/aeronauttrial-regular.otf") format("opentype");
+  src: url("../assets/fonts/aeronauttrial-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
