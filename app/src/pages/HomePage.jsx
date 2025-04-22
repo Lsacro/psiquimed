@@ -1,12 +1,11 @@
 import AboutUs from "../components/AboutUs/AboutUs";
-import BoxTree from "../components/Commons/BoxTree/BoxTree";
 import Navbar from "../components/Commons/Navbar/Navbar";
 import Wassap from "../components/Commons/WhatsappButton/Wassap";
 import Footer from "../components/Footer/Footer";
 import Home from "../components/Home/Home";
+import Mapa from "../components/Mapa/Mapa";
 import OurServices from "../components/Our services/OurServices";
 import OurTeam from "../components/OurTeam/OurTeam";
-import Testimonials from "../components/Testimonials/Testimonials";
 
 function HomePage() {
   return (
@@ -16,6 +15,7 @@ function HomePage() {
       <AboutUs />
       <OurTeam />
       <OurServices />
+      <Mapa />
       <Footer />
       <Wassap />
     </>
