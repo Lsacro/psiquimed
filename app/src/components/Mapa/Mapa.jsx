@@ -11,6 +11,14 @@ function Mapa() {
         size={"30px"}
       />
       <Map />
+      <script
+        src="https://static.elfsight.com/platform/platform.js"
+        async
+      ></script>
+      <div
+        className="elfsight-app-4f8f534c-3e1c-4576-b9e6-3dee8e514b0e"
+        data-elfsight-app-lazy
+      ></div>
     </section>
   );
 }

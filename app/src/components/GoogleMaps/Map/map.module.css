@@ -1,7 +1,7 @@
 iframe {
   width: 100%;
   max-width: 800px;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4/ 3;
   margin: 0 auto;
   border-radius: 16px;
   overflow: hidden;
@@ -9,5 +9,5 @@ iframe {
 }
 
 .map {
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
