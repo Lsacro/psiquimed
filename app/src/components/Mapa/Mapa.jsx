@@ -3,7 +3,7 @@ import Map from "../GoogleMaps/Map/Map";
 
 function Mapa() {
   return (
-    <section>
+    <section id="ubicacion">
       <SubTitle
         title="Ubicación"
         src="/SVG/servicios.svg"
@@ -16,6 +16,7 @@ function Mapa() {
         async
       ></script>
       <div
+        id="resenas"
         className="elfsight-app-4f8f534c-3e1c-4576-b9e6-3dee8e514b0e"
         data-elfsight-app-lazy
       ></div>

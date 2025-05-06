@@ -38,12 +38,14 @@ function NavbarMenu() {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={() => handleScroll("footer")}>Inicio</MenuItem>
+        <MenuItem onClick={() => handleScroll("inicio")}>Inicio</MenuItem>
         <MenuItem onClick={() => handleScroll("nosotros")}>Nosotros</MenuItem>
         <MenuItem onClick={() => handleScroll("equipo")}>
           Nuestro Equipo
         </MenuItem>
-        <MenuItem onClick={() => handleScroll("footer")}>Servicios</MenuItem>
+        <MenuItem onClick={() => handleScroll("servicios")}>Servicios</MenuItem>
+        <MenuItem onClick={() => handleScroll("ubicacion")}>Ubicacion</MenuItem>
+        <MenuItem onClick={() => handleScroll("resenas")}>Reseñas</MenuItem>
       </Menu>
     </div>
   );
