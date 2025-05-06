@@ -12,6 +12,7 @@ const Home = () => {
             <div>
               <YouTubeVideo
                 video="/videos/Psiquimed1.mp4"
+                video2="/videos/Psiquimed 1- Cuadrado .mp4"
                 img="/videos/preview.jpg"
               />
             </div>

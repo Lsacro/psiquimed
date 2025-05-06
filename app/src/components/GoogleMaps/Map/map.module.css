@@ -1,6 +1,6 @@
 iframe {
   width: 100%;
-  max-width: 800px;
+  max-width: 600px;
   aspect-ratio: 4/ 3;
   margin: 0 auto;
   border-radius: 16px;
@@ -9,5 +9,22 @@ iframe {
 }
 
 .map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  iframe {
+    max-width: 700px;
+    aspect-ratio: 16/ 9;
+  }
+}
+
+@media (min-width: 1024px) {
+  iframe {
+    max-width: 850px;
+    aspect-ratio: 18/ 9;
+  }
 }
