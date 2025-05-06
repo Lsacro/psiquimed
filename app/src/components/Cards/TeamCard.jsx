@@ -29,7 +29,7 @@ const TeamCard = () => {
     {
       id: 3,
       name: "Dr. Sebastián Vizcaino",
-      titulo: "Médico de la Univerdidad Central del Ecuador",
+      titulo: "Médico Psiquiatra",
       especialidades: [
         "Especialista en Psiquiatría",
         "Psicoterapia/Psicoanálisis",
@@ -39,7 +39,7 @@ const TeamCard = () => {
     },
     {
       id: 4,
-      name: "Dr. Paola Zúñiga",
+      name: "Dr. Paola Zúñiga Vizcaino",
       titulo: "Médico Psiquiatra",
       especialidades: [
         "Especialista en Psiquiatría",
@@ -51,7 +51,7 @@ const TeamCard = () => {
     {
       id: 5,
       name: "Dr. Priscila Catucuamba",
-      titulo: "Terapeuta del Lenguaje de la UCE",
+      titulo: "Terapeuta del Lenguaje",
       especialidades: [
         "Diplomado en técnica ABA",
         "Intervención al TEA y TDAH",
@@ -61,31 +61,42 @@ const TeamCard = () => {
     },
     {
       id: 6,
-      name: "Karla Gutiérrez",
-      titulo: "",
+      name: "PSC. Karla Gutiérrez",
+      titulo: "Psicóloga clínica",
       especialidades: [],
       img: "/doctores/Karla.webp",
     },
     {
       id: 7,
       name: "Melanie Zabala",
-      titulo: "",
+      titulo: "Fisioterapeuta",
       especialidades: [],
       img: "/doctores/Melani.webp",
     },
     {
       id: 8,
       name: "Kimberly Trevino",
-      titulo: "",
+      titulo: "Psicóloga clínica",
       especialidades: [],
       img: "/doctores/Kim.webp",
     },
     {
       id: 9,
       name: "Pamela Sánchez",
-      titulo: "",
+      titulo: "Especialista en geriatría",
       especialidades: [],
       img: "/doctores/Pamela.webp",
+    },
+    {
+      id: 10,
+      name: "PSC. María Belén Villacis",
+      titulo: "Psicóloga clínica",
+      especialidades: [
+        "Magister en sexología clínica y terapia de pareja",
+        "Psicoterapia individual/ familiar y de pareja ",
+        "Sexología clínica",
+      ],
+      img: "/doctores/MariaBelen.webp",
     },
   ];
 
@@ -110,7 +121,7 @@ const TeamCard = () => {
                 style={{
                   backgroundImage: `url(${info.img}), radial-gradient(51.74% 45.16% at 46.65% 38%,#f6f7f8 0%, #98A2AA 44.58%, #98A2AA 100% )`,
                   backgroundSize: "contain",
-                  backgroundPosition: "center",
+                  backgroundPosition: "bottom",
                   backgroundRepeat: "no-repeat",
                 }}
               >
