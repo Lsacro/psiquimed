@@ -23,12 +23,12 @@
   flex-direction: column;
   align-items: start;
   gap: 1rem;
-  margin: 2rem;
+  margin: 2rem 1rem;
 }
 
 .icon {
   width: 25px;
-  margin-right: 1rem;
+  margin-right: 1.2rem;
 }
 
 .item {
@@ -45,6 +45,7 @@
 }
 
 .name {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   text-align: center;
+  width: 220px;
 }

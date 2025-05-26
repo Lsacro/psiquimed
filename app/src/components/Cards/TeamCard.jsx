@@ -39,7 +39,7 @@ const TeamCard = () => {
     },
     {
       id: 4,
-      name: "Dr. Paola Zúñiga Vizcaino",
+      name: "Dr. Paola Zúñiga Guevara",
       titulo: "Médico Psiquiatra",
       especialidades: [
         "Especialista en Psiquiatría",
@@ -47,6 +47,7 @@ const TeamCard = () => {
         "Neurobiología del comportamiento",
       ],
       img: "/doctores/Pao.webp",
+      link: "https://www.linkedin.com/in/paola-elizabeth-zu%C3%B1iga-guevara-96a43a261/?originalSubdomain=ec",
     },
     {
       id: 5,
@@ -61,35 +62,51 @@ const TeamCard = () => {
     },
     {
       id: 6,
-      name: "PSC. Karla Gutiérrez",
+      name: "Psic. Karla Gutiérrez",
       titulo: "Psicóloga clínica",
-      especialidades: [],
+      especialidades: [
+        "Psicóloga infantil y psicorrehabilitadora",
+        "Especialización superior en cuidados paliativos",
+        "Neuropsicologa de la Universidad Israel",
+      ],
       img: "/doctores/Karla.webp",
     },
     {
       id: 7,
-      name: "Melanie Zabala",
+      name: "Lic. Melanie Zabala",
       titulo: "Fisioterapeuta",
-      especialidades: [],
+      especialidades: [
+        "Especializada en ejercicio terapéutico",
+        "Experiencia en rehabilitación y prevención",
+        "Formación continua en lesiones musculoesqueléticas",
+      ],
       img: "/doctores/Melani.webp",
     },
     {
       id: 8,
-      name: "Kimberly Trevino",
+      name: "Psic. Kimberly Trevino",
       titulo: "Psicóloga clínica",
-      especialidades: [],
+      especialidades: [
+        "Psicóloga con experiencia clínica",
+        "Especializada en TDAH y TEA con enfoque Denver y ABA",
+        "Formación en primeros auxilios psicológicos y crisis",
+      ],
       img: "/doctores/Kim.webp",
     },
     {
       id: 9,
-      name: "Pamela Sánchez",
+      name: "Dra. Pamela Sánchez",
       titulo: "Especialista en geriatría",
-      especialidades: [],
+      especialidades: [
+        "Especialista en Geriatría",
+        "Máster en Neuropsicología Clínica",
+        "Patologías crónicas en adultos mayores",
+      ],
       img: "/doctores/Pamela.webp",
     },
     {
       id: 10,
-      name: "PSC. María Belén Villacis",
+      name: "Psic. María Belén Villacis",
       titulo: "Psicóloga clínica",
       especialidades: [
         "Magister en sexología clínica y terapia de pareja",
@@ -125,8 +142,18 @@ const TeamCard = () => {
                   backgroundRepeat: "no-repeat",
                 }}
               >
+                <div className="up-text">
+                  <img src="SVG/rotateArrow.svg" alt="Flecha de rotación" />
+                </div>
                 <div className="front-text">
                   <h3>{info.name}</h3>
+                  <a href={info.link} target="_blank">
+                    <img
+                      src="SVG/linkedIn.svg"
+                      alt="Logo LinkedIn"
+                      width={"35px"}
+                    />
+                  </a>
                 </div>
               </div>
               <div className="back">
