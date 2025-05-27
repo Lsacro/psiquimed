@@ -1,3 +1,4 @@
+import YoutubeVideo from "../../Videos/YoutubeVideo/YoutubeVideo";
 import styles from "./boxTree.module.css";
 
 import OurServicesBtn from "@/components/Buttons/OurServicesBtn/OurServicesBtn";
@@ -21,6 +22,9 @@ function BoxTree() {
       "Terapia ocupacional",
       "Psicopedagogía",
     ],
+    video: "/videos/Psiquimed3.mp4",
+    img: "/videos/preview3.jpg",
+    video2: "/videos/Psiquimed3_Cuadrado.mp4",
   };
 
   const group2 = {
@@ -33,6 +37,9 @@ function BoxTree() {
       "Talleres de Arteterapia: artes plásticas y danza para fortalecer habilidades sociales, lenguaje corporal, autoestima y vínculos",
       "Escuela para padres de adolescentes: “Tengo un adolescente, ¡Auxilio!”",
     ],
+    video: "/videos/Psiquimed4.mp4",
+    img: "/videos/preview4.jpg",
+    video2: "/videos/Psiquimed4_Cuadrado.mp4",
   };
   const group3 = {
     name: "Adultos",
@@ -44,6 +51,9 @@ function BoxTree() {
     groupTherapies: [
       "Talleres de Arteterapia: artes plásticas y danza para fortalecer habilidades sociales, lenguaje corporal, autoestima y vínculos",
     ],
+    video: "/videos/Psiquimed5.mp4",
+    img: "/videos/preview5.jpg",
+    video2: "/videos/Psiquimed5_Cuadrado.mp4",
   };
   const group4 = {
     name: "Adultos Mayores",
@@ -57,6 +67,9 @@ function BoxTree() {
       "Cuidamos tu Memoria, Honramos tu Historia: taller para el acompañamiento en la pérdida de memoria",
       "Evaluación por fisioterapia",
     ],
+    video: "/videos/Psiquimed6.mp4",
+    img: "/videos/preview6.jpg",
+    video2: "/videos/Psiquimed6_Cuadrado.mp4",
   };
   const group5 = {
     name: "Servicios de consultoría",
@@ -77,6 +90,9 @@ function BoxTree() {
               name={group.name.toUpperCase()}
               individual={group.individualTherapies || ""}
               group={group.groupTherapies}
+              video={group.video || ""}
+              img={group.img || ""}
+              video2={group.video2 || ""}
             />
           </div>
         );
