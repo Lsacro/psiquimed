@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import styles from "./navbarMenu.module.css";
 
 function NavbarMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -39,7 +40,9 @@ function NavbarMenu() {
         }}
       >
         <MenuItem onClick={() => handleScroll("inicio")}>Inicio</MenuItem>
-        <MenuItem onClick={() => handleScroll("nosotros")}>Nosotros</MenuItem>
+        <div id="nosotros" className={styles.displayNone}>
+          <MenuItem onClick={() => handleScroll("nosotros")}>Nosotros</MenuItem>
+        </div>
         <MenuItem onClick={() => handleScroll("equipo")}>
           Nuestro Equipo
         </MenuItem>

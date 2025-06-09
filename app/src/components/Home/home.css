@@ -49,6 +49,10 @@ h1 {
   color: slategrey;
 }
 
+.video-noshow {
+  display: none;
+}
+
 @media (width >= 768px) {
   .title-img {
     flex-direction: row;
@@ -56,5 +60,23 @@ h1 {
   .home {
     margin: 16px;
     border-radius: 50px;
+  }
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  .video-noshow {
+    display: block;
+  }
+}
+
+@media (width >= 1024px) {
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
   }
 }

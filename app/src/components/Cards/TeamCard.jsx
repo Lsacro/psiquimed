@@ -36,6 +36,7 @@ const TeamCard = () => {
         "Psicoterapia Procesal Sistémica",
       ],
       img: "/doctores/Sebas.webp",
+      link: "https://www.linkedin.com/in/sebasti%C3%A1n-vizca%C3%ADno-b47964287/",
     },
     {
       id: 4,
@@ -147,13 +148,15 @@ const TeamCard = () => {
                 </div>
                 <div className="front-text">
                   <h3>{info.name}</h3>
-                  <a href={info.link} target="_blank">
-                    <img
-                      src="SVG/linkedIn.svg"
-                      alt="Logo LinkedIn"
-                      width={"35px"}
-                    />
-                  </a>
+                  {info.link && (
+                    <a href={info.link} target="_blank">
+                      <img
+                        src="SVG/linkedIn.svg"
+                        alt="Logo LinkedIn"
+                        width={"35px"}
+                      />
+                    </a>
+                  )}
                 </div>
               </div>
               <div className="back">
