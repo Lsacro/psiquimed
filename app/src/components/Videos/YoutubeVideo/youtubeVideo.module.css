@@ -30,27 +30,3 @@
   border-radius: 8px;
   margin: 0 auto;
 }
-
-.video2 {
-  display: none;
-}
-
-@media (min-width: 600px) {
-  .video2 {
-    width: 100%; /* Muy importante */
-    max-width: 370px; /* Tamaño límite */
-    display: block;
-    border-radius: 8px;
-    margin: 0 auto;
-  }
-  .video,
-  .preview {
-    display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .video2 {
-    max-width: 350px;
-  }
-}

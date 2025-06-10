@@ -14,6 +14,7 @@ const TeamCard = () => {
         "Neurobiología del comportamiento",
       ],
       img: "/doctores/Kath.webp",
+      link: "https://www.linkedin.com/in/katherine-ch%C3%A9rrez-476152191/",
     },
     {
       id: 2,
@@ -82,6 +83,7 @@ const TeamCard = () => {
         "Formación continua en lesiones musculoesqueléticas",
       ],
       img: "/doctores/Melani.webp",
+      link: "https://www.linkedin.com/in/melany-zabala-600768125/",
     },
     {
       id: 8,
@@ -115,6 +117,7 @@ const TeamCard = () => {
         "Sexología clínica",
       ],
       img: "/doctores/MariaBelen.webp",
+      link: "https://www.linkedin.com/in/maria-bel%C3%A9n-villac%C3%ADs-chicaiza-632289202/",
     },
   ];
 

@@ -27,9 +27,6 @@ function YoutubeVideo({ video, img, video2 }) {
           Tu navegador no soporta video HTML5.
         </video>
       )}
-      <video className={styles.video2} src={video2} controls autoPlay>
-        Tu navegador no soporta video2 HTML5.
-      </video>
     </div>
   );
 }
