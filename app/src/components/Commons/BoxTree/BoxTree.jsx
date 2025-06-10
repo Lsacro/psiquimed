@@ -24,7 +24,7 @@ function BoxTree() {
     ],
     video: "/videos/Psiquimed3.mp4",
     img: "/videos/preview3.jpg",
-    video2: "/videos/Psiquimed3_Cuadrado.mp4",
+    video2: "/videos/Psiquimed3.mp4",
   };
 
   const group2 = {
@@ -39,7 +39,7 @@ function BoxTree() {
     ],
     video: "/videos/Psiquimed4.mp4",
     img: "/videos/preview4.jpg",
-    video2: "/videos/Psiquimed4_Cuadrado.mp4",
+    video2: "/videos/Psiquimed4.mp4",
   };
   const group3 = {
     name: "Adultos",
@@ -53,7 +53,7 @@ function BoxTree() {
     ],
     video: "/videos/Psiquimed5.mp4",
     img: "/videos/preview5.jpg",
-    video2: "/videos/Psiquimed5_Cuadrado.mp4",
+    video2: "/videos/Psiquimed5.mp4",
   };
   const group4 = {
     name: "Adultos Mayores",
@@ -69,7 +69,7 @@ function BoxTree() {
     ],
     video: "/videos/Psiquimed6.mp4",
     img: "/videos/preview6.jpg",
-    video2: "/videos/Psiquimed6_Cuadrado.mp4",
+    video2: "/videos/Psiquimed6.mp4",
   };
   const group5 = {
     name: "Servicios de consultoría",

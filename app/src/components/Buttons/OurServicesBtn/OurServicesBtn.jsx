@@ -17,11 +17,14 @@ function OurServicesBtn({ name, individual, group, video, video2, img }) {
       </button>
       {hidden && (
         <div className={styles.hidden}>
-          <ServiceBtn
-            terapia={individual ? "Terapia Individual" : ""}
-            servicios={individual || null}
-          />
-          <ServiceBtn terapia="Terapia Grupal" servicios={group} />
+          <div>
+            <ServiceBtn
+              terapia={individual ? "Terapia Individual" : ""}
+              servicios={individual || null}
+            />
+            <ServiceBtn terapia="Terapia Grupal" servicios={group} />
+          </div>
+
           {video && video2 && img && (
             <YoutubeVideo video={video} video2={video2} img={img} />
           )}
