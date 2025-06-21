@@ -59,3 +59,8 @@
 .hidden {
   margin-bottom: 2rem;
 }
+
+.carrousel {
+  display: flex;
+  overflow: scroll;
+}

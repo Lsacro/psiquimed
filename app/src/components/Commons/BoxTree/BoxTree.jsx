@@ -1,4 +1,3 @@
-import YoutubeVideo from "../../Videos/YoutubeVideo/YoutubeVideo";
 import styles from "./boxTree.module.css";
 
 import OurServicesBtn from "@/components/Buttons/OurServicesBtn/OurServicesBtn";
@@ -22,9 +21,10 @@ function BoxTree() {
       "Terapia ocupacional",
       "Psicopedagogía",
     ],
-    video: "/videos/Psiquimed3.mp4",
-    img: "/videos/preview3.jpg",
-    video2: "/videos/Psiquimed3.mp4",
+
+    video: [
+      { videos: ["/videos/Psiquimed3.mp4"], imgs: ["/videos/preview3.jpg"] },
+    ],
   };
 
   const group2 = {
@@ -37,9 +37,13 @@ function BoxTree() {
       "Talleres de Arteterapia: artes plásticas y danza para fortalecer habilidades sociales, lenguaje corporal, autoestima y vínculos",
       "Escuela para padres de adolescentes: “Tengo un adolescente, ¡Auxilio!”",
     ],
-    video: "/videos/Psiquimed4.mp4",
-    img: "/videos/preview4.jpg",
-    video2: "/videos/Psiquimed4.mp4",
+    video: [
+      { videos: ["/videos/Psiquimed4.mp4"], imgs: ["/videos/preview4.jpg"] },
+      { videos: ["/videos/Psiquimed7.mp4"], imgs: ["/videos/preview7.jpg"] },
+      { videos: ["/videos/Psiquimed8.mp4"], imgs: ["/videos/preview8.jpg"] },
+      { videos: ["/videos/Psiquimed9.mp4"], imgs: ["/videos/preview9.jpg"] },
+      { videos: ["/videos/Psiquimed10.mp4"], imgs: ["/videos/preview10.jpg"] },
+    ],
   };
   const group3 = {
     name: "Adultos",
@@ -51,9 +55,9 @@ function BoxTree() {
     groupTherapies: [
       "Talleres de Arteterapia: artes plásticas y danza para fortalecer habilidades sociales, lenguaje corporal, autoestima y vínculos",
     ],
-    video: "/videos/Psiquimed5.mp4",
-    img: "/videos/preview5.jpg",
-    video2: "/videos/Psiquimed5.mp4",
+    video: [
+      { videos: ["/videos/Psiquimed5.mp4"], imgs: ["/videos/preview5.jpg"] },
+    ],
   };
   const group4 = {
     name: "Adultos Mayores",
@@ -67,9 +71,9 @@ function BoxTree() {
       "Cuidamos tu Memoria, Honramos tu Historia: taller para el acompañamiento en la pérdida de memoria",
       "Evaluación por fisioterapia",
     ],
-    video: "/videos/Psiquimed6.mp4",
-    img: "/videos/preview6.jpg",
-    video2: "/videos/Psiquimed6.mp4",
+    video: [
+      { videos: ["/videos/Psiquimed6.mp4"], imgs: ["/videos/preview6.jpg"] },
+    ],
   };
   const group5 = {
     name: "Servicios de consultoría",
@@ -92,7 +96,6 @@ function BoxTree() {
               group={group.groupTherapies}
               video={group.video || ""}
               img={group.img || ""}
-              video2={group.video2 || ""}
             />
           </div>
         );

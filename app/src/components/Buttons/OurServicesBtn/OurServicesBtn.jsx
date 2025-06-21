@@ -3,7 +3,7 @@ import ServiceBtn from "../ServiceBtn/ServiceBtn";
 import styles from "./ourServicesBtn.module.css";
 import { useState } from "react";
 
-function OurServicesBtn({ name, individual, group, video, video2, img }) {
+function OurServicesBtn({ name, individual, group, video }) {
   const [hidden, setHidden] = useState(false);
 
   const handleClick = () => {
@@ -25,9 +25,16 @@ function OurServicesBtn({ name, individual, group, video, video2, img }) {
             <ServiceBtn terapia="Terapia Grupal" servicios={group} />
           </div>
 
-          {video && video2 && img && (
-            <YoutubeVideo video={video} video2={video2} img={img} />
-          )}
+          <div className={styles.carrousel}>
+            {video &&
+              video.map((item, index) => (
+                <YoutubeVideo
+                  key={index}
+                  video={item.videos[0]}
+                  img={item.imgs[0]}
+                />
+              ))}
+          </div>
         </div>
       )}
     </div>
